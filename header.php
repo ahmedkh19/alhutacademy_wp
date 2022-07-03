@@ -4,7 +4,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="assets/dist/css/main.css">
+<link rel="stylesheet" href="<?= get_theme_file_uri('assets/dist/css/main.css'); ?>">
 <?php wp_head(); ?>
 </head>
 <style >
@@ -35,9 +35,9 @@
    flex-direction: column;
    align-items: center;
  }
- .NavBar .Nav-link-active::after{
-   content: url('./assets/src/img/whale.svg');
-   position: absolute;
+ .Nav-link-active::after{
+   content: url('./wp-content/themes/alhutacademy_wp/assets/src/img/whale.svg');
+    position: absolute;
    bottom: -20px;
  }
  .title{
@@ -81,11 +81,11 @@
 			
 		<!-- </nav> -->
 		<!-- #site-navigation -->
-		<nav class="navbar navbar-expand-lg ">
+		<nav class="navbar navbar-expand-lg shadow-sm">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<div  class="d-flex align-items-center">
-						<img src="assets/src/img/logo.svg" class="logo" alt="icon"/>
+						<img src="<?= get_theme_file_uri('assets/src/img/logo.svg'); ?>"  class="logo" alt="icon"/>
 						<div class="logoText">
 						<span>أكاديمية الحوت</span>
 						<span>Alhut Academy</span>
@@ -95,11 +95,9 @@
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse border" id="navbarSupportedContent">
-				<button type="button" class="btn btn-outline-primary my-2 my-sm-2 mr-4 py-1 px-3 rounded">
-				 <img src="./assets/src/img/mode.svg" class="ml-2" alt="icon"> نهاري  
-				</button>
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0 w-75 border text-center justify-content-around align-items-center">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				
+				<ul class="navbar-nav mx-auto w-50 mb-2 mb-lg-0  justify-content-around align-items-center" style="font-size:16px">
 					<li class="nav-item"><a class="nav-link Nav-link-active" aria-current="page" href="#">الرئيسية</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">قدرات</a></li>
@@ -108,9 +106,9 @@
 					<li class="nav-item"><a class="nav-link" href="#">اخر الاخبار</a></li>
 				</ul>
 				<div class="d-flex">
-					<img src="" class="img">
-					<div class="">
-						<p>اسم المستخدم</p>
+					<img src="<?= get_theme_file_uri('assets/src/img/person.png'); ?>" class="img">
+					<div class="mt-1">
+						<p class="m-0"> محمد مصطفي علي</p>
 						<span class="title">اللقب</span>
 					</div>
 				</div>

@@ -11,11 +11,17 @@
  *
  * @see https://github.com/twbs/bootstrap/blob/main/scss/_variables.scss
  */
+ @font-face {
+    font-family: "URW-DIN-Arabic";
+    src: local("URW-DIN-Arabic"),
+    // url(~assets/fonts/alfont_com_AlFont_com_URW-DIN-Arabic.ttf) format("truetype");
+    url('./../fonts/alfont_com_AlFont_com_URW-DIN-Arabic.ttf') format("truetype");
+  }
 $font-size-root:62.5%; // 1rem = 10px
 $font-size-base:1.4rem;
 $line-height-base: 1.5;
 $font-weight-base:400;
-$font-family-sans-serif: 'Ubuntu', "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: "URW-DIN-Arabic",'Ubuntu', "Helvetica Neue", Helvetica, Arial, sans-serif;
 $btn-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out;
 $border-radius:.4rem;
 $primary:blue;
