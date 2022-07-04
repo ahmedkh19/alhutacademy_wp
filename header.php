@@ -4,66 +4,13 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="<?=get_theme_file_uri('/assets/dist/css/main.css');?>" type="text/css">
+<link rel="stylesheet" href="<?=get_theme_file_uri('assets/dist/css/main.css');?>" type="text/css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
 <?php wp_head(); ?>
 </head>
-<style >
- .navbar{
-  /* border-bottom: 2px solid var(--mainColor); */
-  direction: rtl;
-  padding:0 30px;
- }
- .logo{
-  width: 45px;
-  margin-left: 5px;
- }
- .logoText{
-   display: flex;
-   flex-direction: column;
-   font-size: 8px;
- }
- .nav-link{
-  color: #868891 !important;
-  cursor: pointer;
-  font-size:14px;
- }
- .nav-link:hover{
-  color: #000 !important;
- }
- .Nav-link-active{
-   color: #363848 !important;
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
- .Nav-link-active::after{
-   content: url('./wp-content/themes/alhutacademy_wp/assets/src/img/whale.svg');
-    position: absolute;
-   bottom: -20px;
- }
- .title{
-	color:#4774AC;
- }
- .img{
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
-	margin: 5px
- }
- .name, .title{
-	font-size:12px
- }
 
-/* .NavIcon{
-  background-image: url('./assets/src/img/menu.png') !important;
-  width: 40px;
-    height: 40px;
-    background-size: contain;
-    display: flex;
-} */
-</style>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">

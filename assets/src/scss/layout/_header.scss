@@ -1,3 +1,54 @@
-.img{
-    width: 200px !important;
-}
+.navbar{
+    /* border-bottom: 2px solid var(--mainColor); */
+    direction: rtl;
+    padding:0 30px;
+   }
+   .logo{
+    width: 45px;
+    margin-left: 5px;
+   }
+   .logoText{
+     display: flex;
+     flex-direction: column;
+     font-size: 8px;
+   }
+   .nav-link{
+    color: #868891 !important;
+    cursor: pointer;
+    font-size:14px;
+   }
+   .nav-link:hover{
+    color: #000 !important;
+   }
+   .Nav-link-active{
+     color: #363848 !important;
+     position: relative;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   .Nav-link-active::after{
+     content: url('./../../img/whale.svg');
+      position: absolute;
+     bottom: -20px;
+   }
+   .title{
+      color:#4774AC;
+   }
+   .img{
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      margin: 5px
+   }
+   .name, .title{
+      font-size:12px
+   }
+  
+  /* .NavIcon{
+    background-image: url('./assets/src/img/menu.png') !important;
+    width: 40px;
+      height: 40px;
+      background-size: contain;
+      display: flex;
+  } */
