@@ -4,26 +4,29 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="stylesheet" href="<?= get_theme_file_uri('assets/dist/css/main.css'); ?>">
+<link rel="stylesheet" href="<?=get_theme_file_uri('/assets/dist/css/main.css');?>" type="text/css">
+
 <?php wp_head(); ?>
 </head>
 <style >
  .navbar{
   /* border-bottom: 2px solid var(--mainColor); */
   direction: rtl;
+  padding:0 30px;
  }
  .logo{
-  width: 55px;
+  width: 45px;
   margin-left: 5px;
  }
  .logoText{
    display: flex;
    flex-direction: column;
-   font-size: 10px;
+   font-size: 8px;
  }
  .nav-link{
   color: #868891 !important;
   cursor: pointer;
+  font-size:14px;
  }
  .nav-link:hover{
   color: #000 !important;
@@ -45,9 +48,12 @@
  }
  .img{
 	border-radius: 50%;
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	margin: 5px
+ }
+ .name, .title{
+	font-size:12px
  }
 
 /* .NavIcon{
@@ -97,7 +103,7 @@
 				</button>
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				
-				<ul class="navbar-nav mx-auto w-50 mb-2 mb-lg-0  justify-content-around align-items-center" style="font-size:16px">
+				<ul class="navbar-nav mx-auto w-50 mb-2 mb-lg-0  justify-content-around align-items-center">
 					<li class="nav-item"><a class="nav-link Nav-link-active" aria-current="page" href="#">الرئيسية</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">من نحن</a></li>
 					<li class="nav-item"><a class="nav-link" href="#">قدرات</a></li>
@@ -108,7 +114,7 @@
 				<div class="d-flex">
 					<img src="<?= get_theme_file_uri('assets/src/img/person.png'); ?>" class="img">
 					<div class="mt-1">
-						<p class="m-0"> محمد مصطفي علي</p>
+						<p class="m-0 name"> محمد مصطفي علي</p>
 						<span class="title">اللقب</span>
 					</div>
 				</div>
